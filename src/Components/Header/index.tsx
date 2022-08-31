@@ -32,8 +32,7 @@ const Header = () =>{
                     wishlist
                 </Button>
                 <div>
-                <img src={minicart} alt="Minicart Icon" />
-                  
+                    <img src={minicart} alt="Minicart Icon" />
                 </div>
             </UserContainer>
       </Container>
