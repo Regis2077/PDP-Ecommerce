@@ -1,18 +1,21 @@
 import React from "react";
+import { Container, ContainerLista } from "./style";
 
-const itemsMenu = ["Eletronics", "Smart Home", "Computers", "Smartphones", 
-"New in Furnitures", "Home & Kitchen", "Video Games Sale", "Holiday Deals"]
 const Menu = () =>{
+  const itemsMenu = ["Eletronics", "Smart Home", "Computers", "Smartphones", 
+  "New in Furnitures", "Home & Kitchen", "Video Games Sale", "Holiday Deals"]
   return(
-    <div>
-      <nav>
-        <ul>
-          {itemsMenu.map((item) =><li>{item}</li>)} 
-        </ul>
-      </nav>
-    </div>
+    <>
+      <Container>
+        <ContainerLista>
+          {itemsMenu.map((items, id) => 
+            <li key={id}>
+              <a href="#">{items}</a>
+            </li>)}          
+        </ContainerLista>
+      </Container>
+    </>
   )
-
 }
 
 export default Menu
