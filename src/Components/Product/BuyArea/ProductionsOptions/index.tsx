@@ -1,10 +1,10 @@
 import React from "react";
 import Shipping from "./shipping";
-import { OptionsList } from "./styles";
+import { Container, OptionsList } from "./styles";
 
 const ProductOptions = () =>{
   return (
-    <div>
+    <Container>
       <span>Color: Space Gray</span>
       <OptionsList>
         <li>
@@ -50,7 +50,7 @@ const ProductOptions = () =>{
         </li>
       </OptionsList>
       <Shipping/>
-    </div>
+    </Container>
   )
 }
 
